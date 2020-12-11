@@ -6,7 +6,7 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer011;
 
 import java.util.Properties;
-
+//todo 消费kafka的数据
 public class SourceTest2_Kafka {
     public static void main(String[] args) throws Exception {
         // kafka配置项
