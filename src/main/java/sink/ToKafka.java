@@ -9,7 +9,7 @@ import org.apache.kafka.clients.producer.ProducerConfig;
 
 import java.util.Properties;
 //将hadoop102的9999端口数据发送到kafka的flinkSink主题中
-public class Tokafka {
+public class ToKafka {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         DataStreamSource<String> socketDs = env.socketTextStream("hadoop102", 9999);
