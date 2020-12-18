@@ -15,7 +15,7 @@ import java.util.Collections;
 import java.util.Properties;
 
 //todo 消费kafka的数据,按照温度30度,进入两个流
-public class Kafka_spilt_select {
+public class transform_Kafka_spilt_select {
     public static void main(String[] args) throws Exception {
         // kafka配置项
         Properties properties = new Properties();

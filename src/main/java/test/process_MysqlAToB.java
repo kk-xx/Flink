@@ -24,7 +24,7 @@ import java.util.Properties;
 //todo 从Kafka读取传感器数据,统计每个传感器发送温度的次数存入MySQL(a表),如果某个传感器温度连续10秒不下降,则输出报警信息到侧输出流并存入MySQL(b表).
 //非常完美
 //思路: 用process函数处理数据,普通信息正常输出,输出到mysql a 表;报警信息侧输出流输出 ,输出到mysql  b 表
-public class MysqlAToB {
+public class process_MysqlAToB {
     public static void main(String[] args) throws Exception {
         // kafka配置项
         Properties properties = new Properties();
@@ -117,7 +117,7 @@ public class MysqlAToB {
             time_stat.clear();
         }
     }
-
+    //连接mysql
     private static class MyJdbc extends RichSinkFunction<String> {
         private String sql;
         private int para;

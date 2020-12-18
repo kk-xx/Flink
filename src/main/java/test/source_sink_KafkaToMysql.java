@@ -19,7 +19,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.util.Properties;
 //todo 消费kafka的数据,传入mysql
-public class KafkaToMysql {
+public class source_sink_KafkaToMysql {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         Properties properties = new Properties();
